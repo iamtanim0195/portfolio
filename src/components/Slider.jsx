@@ -52,11 +52,12 @@ export default function Slider({ data }) {
                 }
             >
                 {data.map((service, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index} >
                         <Image src={service.image.url} alt={service.name} width={200} height={200} />
                         <p className='text-sm text-red-600'>Name: {service.name}</p>
                         <p className='text-sm text-red-600'>Charge:{service.charge}</p>
-                        <p className='text-sm text-red-600'> {service.desc}</p>                    </SwiperSlide>
+                        <p className='text-sm text-red-600'> {service.desc}</p>
+                    </SwiperSlide>
                 ))}
             </Swiper>
         </>

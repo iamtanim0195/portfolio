@@ -1,8 +1,9 @@
-import AboutData from '@/components/AboutData';
+
 import ThemeSwitch from '@/components/ThemeSwitch';
 import Image from 'next/image';
 import React from 'react'
 import { Italianno } from 'next/font/google'
+import AllData from '@/components/AllData';
 
 const italianno = Italianno(
     {
@@ -12,7 +13,8 @@ const italianno = Italianno(
 )
 
 const About = async () => {
-    const data = await AboutData();
+    const res = await AllData();
+    const data = res.about;
     return (
         <div>
             <div className='flex justify-between'>
