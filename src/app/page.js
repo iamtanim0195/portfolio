@@ -1,4 +1,5 @@
 import About from "@/pages/About";
+import Projects from "@/pages/Projects";
 import Services from "@/pages/Services";
 import Skills from "@/pages/Skills";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <About />
       <Services />
       <Skills />
+      <Projects />
     </main>
   );
 }
