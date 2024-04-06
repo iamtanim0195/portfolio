@@ -4,6 +4,7 @@ import Projects from "@/pages/Projects";
 import Services from "@/pages/Services";
 import Skills from "@/pages/Skills";
 import Testimonials from "@/pages/Testimonials";
+import Contact from "@/pages/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Timeline />
       <Testimonials />
+      <Contact />
     </main>
   );
 }
