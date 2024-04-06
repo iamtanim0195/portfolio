@@ -1,7 +1,6 @@
 import AllData from '@/components/AllData';
 import Modal from '@/components/Modal';
 import Image from 'next/image';
-import React from 'react'
 
 const Projects = async () => {
     const res = await AllData();

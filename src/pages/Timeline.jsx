@@ -1,6 +1,5 @@
 import TimelineTab from "@/components/TimelineTab";
 import AllData from "../components/AllData";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 const Timeline = async () => {
     const res = await AllData();
