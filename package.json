@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.3.3",
-    "@emotion/react": "^11.11.4",
+    
+    
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.15",
-    "@react-email/components": "^0.0.16",
-    "@react-email/render": "^0.0.12",
-    "emailjs-com": "^3.2.0",
+
+
+
     "next": "14.1.4",
     "next-themes": "^0.3.0",
     "react": "^18",
