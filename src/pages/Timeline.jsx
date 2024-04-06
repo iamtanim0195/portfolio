@@ -8,7 +8,7 @@ const Timeline = async () => {
     const education = timeline.filter(timeline => timeline.enabled === true && timeline.forEducation === true);
     const experience = timeline.filter(timeline => timeline.enabled === true && timeline.forEducation === false);
     return (
-        <div>
+        <div className="mt-5">
             <TimelineTab education={education} experience={experience} />
         </div>
     );
