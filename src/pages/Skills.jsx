@@ -1,27 +1,10 @@
-"use client"
-
-import { useState, useEffect } from 'react';
 import AllData from '@/components/AllData';
 import Image from 'next/image';
 
-const Skills = () => {
-    const [skillsData, setSkillsData] = useState(null);
-
-    useEffect(() => {
-        const fetchSkillsData = async () => {
-            try {
-                const res = await AllData();
-                const skills = res.skills;
-                const filteredSkills = skills.filter(skill => skill.enabled === true);
-                setSkillsData(filteredSkills);
-            } catch (error) {
-                console.error('Error fetching skills data:', error);
-            }
-        };
-
-        fetchSkillsData();
-    }, []);
-
+const Skills = async () => {
+    const res = await AllData();
+    const skills = res.skills;
+    const data = skills.filter(skill => skill.enabled === true);
     return (
         <div className='mt-10'>
             <div className='text-center'>
@@ -29,7 +12,7 @@ const Skills = () => {
                 <p><span className='text-green-500'>MY</span> Talent</p>
             </div>
             <div className='max-sm:flex max-sm:flex-row max-sm:overflow-x-auto max-sm:w-full sm:grid gap-3 sm:grid-cols-3 2xl:grid-cols-4'>
-                {skillsData?.map((skill, index) => (
+                {data?.map((skill, index) => (
                     <div key={index} className='mx-auto flex-shrink-0'>
                         <div className="relative group">
                             <Image src={skill.image.url} alt={skill.name} width={200} height={200} className="group-hover:scale-125 transition duration-300 ease-in-out" />
@@ -40,8 +23,10 @@ const Skills = () => {
                     </div>
                 ))}
             </div>
+
+
         </div>
-    );
-};
+    )
+}
 
 export default Skills;
