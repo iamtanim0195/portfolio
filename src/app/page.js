@@ -1,10 +1,10 @@
-import Timeline from "@/pages/Timeline";
-import About from "@/pages/About";
-import Projects from "@/pages/Projects";
-import Services from "@/pages/Services";
-import Skills from "@/pages/Skills";
-import Testimonials from "@/pages/Testimonials";
-import Contact from "@/pages/Contact";
+import Timeline from "@/page/Timeline";
+import About from "@/page/About";
+import Projects from "@/page/Projects";
+import Services from "@/page/Services";
+import Skills from "@/page/Skills";
+import Testimonials from "@/page/Testimonials";
+import Contact from "@/page/Contact";
 
 export default function Home() {
   return (
